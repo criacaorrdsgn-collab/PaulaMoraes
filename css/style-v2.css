@@ -535,3 +535,22 @@ a {
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
     color: #FFF;
 }
+
+/* Protecao de Imagens e Textos */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+}
+.whatsapp-float svg {
+    pointer-events: auto; /* Garante que o clique no svg do whatsapp funcione caso precise */
+}
